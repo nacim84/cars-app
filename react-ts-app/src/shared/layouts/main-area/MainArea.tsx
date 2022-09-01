@@ -1,5 +1,9 @@
-import React from "react";
+import { Home } from "../../../pages/home/Home";
 
 export default function MainArea() {
-  return <div>MainArea</div>;
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 }
