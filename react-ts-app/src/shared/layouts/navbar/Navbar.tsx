@@ -3,7 +3,7 @@ import GithubLogo from "../../../assets/img/github-logo.png";
 export default function Navbar() {
   return (
     <div>
-      <nav className="mx-auto p-4 bg-amber-400">
+      <nav className="mx-auto p-4 bg-amber-400 top-0 fixed w-full z-50">
         <div className="container mx-auto flex items-center justify-between">
           <a
             className="
