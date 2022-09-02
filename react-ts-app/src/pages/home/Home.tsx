@@ -1,14 +1,15 @@
 import React from "react";
 import { UserCard } from "../../users/components/UserCard";
-import { users } from "../../users/data/users.data";
+import { users as usersList } from "../../users/services/users.service";
 import { IUser } from "../../users/models/users.model";
 
 export const Home = () => {
-  const usersJson: IUser[] = users;
+  const users: IUser[] = usersList;
+
   return (
     <div className="flex flex-col items-center space-y-6">
-      {usersJson.map((userJson) => {
-        return <UserCard user={userJson} />;
+      {users.map((user) => {
+        return <UserCard user={user} />;
       })}
     </div>
   );
