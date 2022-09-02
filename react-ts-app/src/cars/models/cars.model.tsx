@@ -1,8 +1,10 @@
-export interface Car {
+export interface ICar {
+  id: number;
   model: string;
   constructor: ConstructorEnum;
   year: number;
   color: Color;
+  imgPath: string;
 }
 
 export enum ConstructorEnum {
