@@ -1,9 +1,9 @@
-import React from "react";
+import { FC } from "react";
 import Footer from "./footer/Footer";
 import MainArea from "./main-area/MainArea";
-import Navbar from "./navbar/Navbar";
+import { Navbar } from "./navbar/Navbar";
 
-export default function Layout() {
+export const Layout: FC = () => {
   return (
     <div>
       <Navbar />
@@ -11,4 +11,4 @@ export default function Layout() {
       <Footer />
     </div>
   );
-}
+};

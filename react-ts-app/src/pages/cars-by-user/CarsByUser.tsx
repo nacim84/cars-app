@@ -1,5 +1,5 @@
-import * as React from "react";
+import { FC } from "react";
 
-export default function CarsByUser(userUid: string) {
+export const CarsByUser: FC<string> = (userUid) => {
   return <div></div>;
-}
+};

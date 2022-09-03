@@ -150,3 +150,5 @@ export const users = [
     ],
   },
 ];
+
+const getAllUsers = () => {};
