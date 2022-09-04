@@ -1,12 +1,13 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 import { UserCardProps } from "../models/users.model";
 
 export const UserCard: FC<UserCardProps> = ({ user }) => {
-  // Controller
-
-  // Template/Vue
   return (
-    <a className="flex flex-row justify-between items-center w-3/4 bg-amber-200 rounded-lg px-4 py-2 shadow-lg shadow-amber-200 hover:bg-amber-300 border border-amber-300">
+    <Link
+      to={"users/" + user.id}
+      className="flex flex-row justify-between items-center w-3/4 bg-amber-200 rounded-lg px-4 py-2 shadow-lg shadow-amber-200 hover:bg-amber-300 border border-amber-300"
+    >
       <div>
         <p className="text-base font-sans font-semibold">Id : {user.id}</p>
         <p className="text-base font-sans font-semibold">
@@ -27,6 +28,6 @@ export const UserCard: FC<UserCardProps> = ({ user }) => {
           alt=""
         />
       </div>
-    </a>
+    </Link>
   );
 };
