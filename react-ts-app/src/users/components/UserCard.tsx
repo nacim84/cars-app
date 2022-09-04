@@ -17,7 +17,7 @@ export const UserCard: FC<UserCardProps> = ({ user }) => {
         </p>
         <p className="text-base font-sans font-semibold">Age : {user.age}</p>
         <p className="text-base font-sans font-semibold">
-          Number of Cars : {user.cars.length}
+          Number of Cars : {user.idCars.length}
         </p>
       </div>
       <div className="flex flex-wrap justify-center">

@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
 import GithubLogo from "../../../assets/img/github-logo.png";
 
 export const Navbar: FC = () => {
@@ -7,7 +6,7 @@ export const Navbar: FC = () => {
     <div>
       <nav className="mx-auto p-4 bg-amber-400 top-0 fixed w-full z-50">
         <div className="container mx-auto flex items-center justify-between">
-          <NavLink
+          <a
             className="
         focus:outline-none 
         focus-visible:ring-4
@@ -21,7 +20,7 @@ export const Navbar: FC = () => {
         z-50
         hover:opacity-75
         transition-opacity"
-            to="/"
+            href="/"
             aria-label="Go To Home"
           >
             <img
@@ -29,7 +28,7 @@ export const Navbar: FC = () => {
               src={GithubLogo}
               alt="github-logo"
             />
-          </NavLink>
+          </a>
           <button
             className="
         lg:hidden 

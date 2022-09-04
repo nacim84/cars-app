@@ -5,24 +5,7 @@ export const users = [
     email: "jean@email.com",
     age: 30,
     imgPath: "/img/user1.jpg",
-    cars: [
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-    ],
+    idCars: [1, 2],
   },
   {
     id: 2,
@@ -30,24 +13,7 @@ export const users = [
     email: "pascal@email.com",
     age: 25,
     imgPath: "/img/user2.jpg",
-    cars: [
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-    ],
+    idCars: [1, 5],
   },
   {
     id: 3,
@@ -55,24 +21,7 @@ export const users = [
     email: "nacim@email.com",
     age: 38,
     imgPath: "/img/user3.jpg",
-    cars: [
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-    ],
+    idCars: [2, 4],
   },
   {
     id: 4,
@@ -80,24 +29,7 @@ export const users = [
     email: "riles@email.com",
     age: 3,
     imgPath: "/img/user4.jpg",
-    cars: [
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-    ],
+    idCars: [1, 3],
   },
   {
     id: 5,
@@ -105,24 +37,7 @@ export const users = [
     email: "lyna@email.com",
     age: 5,
     imgPath: "/img/user5.jpg",
-    cars: [
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-    ],
+    idCars: [2, 5],
   },
   {
     id: 6,
@@ -130,25 +45,6 @@ export const users = [
     email: "said@email.com",
     age: 36,
     imgPath: "/img/user6.jpg",
-    cars: [
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-      {
-        id: 2,
-        model: "Corrola",
-        constructor: "Toyota",
-        year: 2020,
-        color: "Blue",
-        imgPath: "/img/car2.jpg",
-      },
-    ],
+    idCars: [1, 4],
   },
 ];
-
-const getAllUsers = () => {};
