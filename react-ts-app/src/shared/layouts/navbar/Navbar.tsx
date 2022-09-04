@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 import GithubLogo from "../../../assets/img/github-logo.png";
 
 export const Navbar: FC = () => {
@@ -6,7 +7,7 @@ export const Navbar: FC = () => {
     <div>
       <nav className="mx-auto p-4 bg-amber-400 top-0 fixed w-full z-50">
         <div className="container mx-auto flex items-center justify-between">
-          <a
+          <Link
             className="
         focus:outline-none 
         focus-visible:ring-4
@@ -20,7 +21,7 @@ export const Navbar: FC = () => {
         z-50
         hover:opacity-75
         transition-opacity"
-            href="/"
+            to="/"
             aria-label="Go To Home"
           >
             <img
@@ -28,7 +29,7 @@ export const Navbar: FC = () => {
               src={GithubLogo}
               alt="github-logo"
             />
-          </a>
+          </Link>
           <button
             className="
         lg:hidden 
@@ -86,7 +87,7 @@ export const Navbar: FC = () => {
         lg:w-full
         "
           >
-            <a
+            <Link
               className="
           px-6 py-1 
           focus:outline-none 
@@ -96,11 +97,11 @@ export const Navbar: FC = () => {
           ring-offset-4 
           ring-offset-amber-400 hover:text-neutral-600  dark:text-neutral-900 transition-colors"
               role="menuitem"
-              href="/"
+              to="/"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               className="
           px-6 py-1 
           focus:outline-none 
@@ -110,11 +111,11 @@ export const Navbar: FC = () => {
           ring-offset-4 
           ring-offset-amber-400 hover:text-neutral-600 dark:text-neutral-900 transition-colors lg:mr-auto"
               role="menuitem"
-              href="/"
+              to="/contact"
             >
               Contact
-            </a>
-            <a
+            </Link>
+            <Link
               className="
           px-6 py-1 
           focus:outline-none 
@@ -124,11 +125,11 @@ export const Navbar: FC = () => {
           ring-offset-4 
           ring-offset-amber-400 hover:text-neutral-600 dark:text-neutral-900 transition-colors"
               role="menuitem"
-              href="/"
+              to="/log-in"
             >
               Login
-            </a>
-            <a
+            </Link>
+            <Link
               className="
           px-6 py-1 
           bg-teal-900
@@ -143,10 +144,10 @@ export const Navbar: FC = () => {
           ring-offset-4 
           ring-offset-amber-400 dark:text-neutral-900"
               role="menuitem"
-              href="/"
+              to="/sign-up"
             >
               Sign Up
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

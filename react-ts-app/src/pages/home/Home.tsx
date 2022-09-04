@@ -7,9 +7,9 @@ import { interval } from "rxjs/internal/observable/interval";
 export const Home: FC = () => {
   const users: IUser[] = usersList;
 
-  const observable$ = interval(1000);
+  // const observable$ = interval(1000);
 
-  observable$.subscribe((x) => console.log(x));
+  // observable$.subscribe((x) => console.log(x));
 
   return (
     <div className="flex flex-col items-center space-y-6">
